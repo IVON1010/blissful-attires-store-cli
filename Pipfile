@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+click = "==8.0.1"
+regex = "==2024.5.15"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

@@ -33,3 +33,9 @@ def delete_supplier(conn, id):
     cur = conn.cursor()
     cur.execute(sql, (id,))
     conn
+
+def get_suppliers(conn):
+    """ Fetch all suppliers from the database """
+    cur = conn.cursor()
+    cur.execute("SELECT id, name FROM suppliers")
+    return cur.fetchall()
